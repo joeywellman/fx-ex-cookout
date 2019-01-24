@@ -1,0 +1,64 @@
+// Copy the following objects into your JavaScript file.
+
+const hamburger = {
+	name: 'Hamburger',
+	type: 'beef',
+	cooked: false,
+}
+const zucchini = {
+	name: 'Zucchini',
+	type: 'vegetable',
+	cooked: false,
+}
+const chickenBreast = {
+	name: 'Chicken Breast',
+	type: 'chicken',
+	cooked: false,
+}
+const corn = {
+	name: 'Corn',
+	type: 'vegetable',
+	cooked: false,
+}
+const steak = {
+	name: 'Steak',
+	type: 'beef',
+	cooked: false,
+}
+
+// An array that is grouping the objects together.
+const foods = [hamburger, zucchini, chickenBreast, corn, steak];
+
+// An empty array that will store the objects after the `grill()` function cooks the food.
+const cookedFood = [];
+
+// This exercise does not require you to alter this function. 
+// But read it. See if you can follow what it takes in, executes, and returns.
+
+// The grill() function. Copy this into your JavaScript as well.
+
+function grill (currentObject) {
+    // Modify the food so that it is cooked
+    // currentObject.cooked = true;
+    for(let i = 0; i < foods.length; i++){
+    currentObject.cooked = true;
+  }
+    // Put the cooked food into the appropriate array
+    // cookedFood.push(currentObject);
+    cookedFood.push(currentObject.name);
+console.log(currentObject);
+}
+
+// Grilling foods
+grill(hamburger);
+grill(zucchini);
+grill(chickenBreast);
+grill(corn);
+grill(steak);
+
+// Foods grilled
+console.log(cookedFood);
+
+// Your task is to iterate over the array of foods and 
+// invoke the function for each item so that the cookedFood array 
+// contains all of the items after they are cooked.
