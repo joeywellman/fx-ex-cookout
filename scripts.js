@@ -39,22 +39,20 @@ const cookedFood = [];
 
 function grill (currentObject) {
     // Modify the food so that it is cooked
-    // currentObject.cooked = true;
-    for(let i = 0; i < foods.length; i++){
     currentObject.cooked = true;
-  }
     // Put the cooked food into the appropriate array
     // cookedFood.push(currentObject);
-    cookedFood.push(currentObject.name);
-console.log(currentObject);
+    cookedFood.push(currentObject);
 }
-
 // Grilling foods
-grill(hamburger);
-grill(zucchini);
-grill(chickenBreast);
-grill(corn);
-grill(steak);
+// grill(hamburger);
+// grill(zucchini);
+// grill(chickenBreast);
+// grill(corn);
+// grill(steak);
+for(i = 0; i < foods.length; i++){
+    grill(foods[i]);
+}
 
 // Foods grilled
 console.log(cookedFood);
